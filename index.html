@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        h1{
+        font-family: "Happy Monkey", system-ui;
+        font-weight: 400;
+        font-size: 2rem;
+        font-style: normal;
+        color: #002766;
+        padding: 1rem
+        }
+
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            background-color: #e4f4f3;
+        } 
+        .inputContainer{
+            /* position: absolute; */
+            top: 1rem;
+            left: 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            width: 100%;
+        }
+        textarea{
+            resize: none;
+            width: 20rem;
+            height: 1rem;
+            display: flex;
+            align-items: center;
+            outline: none;
+            padding: 0.7rem;
+            margin-top: 1rem;
+            border: 1.9px solid #002766;
+            border-radius: 10px;
+            overflow: hidden;
+            color: #002766;
+            font-weight: 500;
+        }
+        .actionBtns{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        button{
+            background-color: #002766;
+            color: #fff;
+            font-size: 1rem;
+            outline: none;
+            border: none;
+            padding: 0.5rem 2rem;
+            border-radius: 5px;
+            margin: 0 1rem;
+            cursor: pointer;
+        }
+        textarea::placeholder {
+            font-size: 20px;
+            color: #002766;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tree Visualizer</h1>
+    <div class="inputContainer">
+        <textarea class="input" rows="5"></textarea>
+        <div class="actionBtns">
+            <button class="applyBtn">Apply</button>
+            <button class="clearBtn">Clear</button>
+        </div>
+      
+    </div>
+    <canvas>
+
+    </canvas>
+    <script type="module" src="./drawBinaryTree.js"></script>
+</body>
+</html>
